@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project": {
+    "personal-portifolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/project",
+            "outputPath": "dist/personal-portifolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,7 +32,6 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -70,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "project:build:production"
+              "buildTarget": "personal-portifolio:build:production"
             },
             "development": {
-              "buildTarget": "project:build:development"
+              "buildTarget": "personal-portifolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "71435e51-7d15-44f7-8e7c-afcd62b38688"
+    "analytics": "bf0c3f95-1acd-4359-8e65-e0021389a635"
   }
 }
