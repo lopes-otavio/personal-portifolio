@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
+import { FirstSectionComponent } from './components/first-section/first-section.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { CommonModule } from '@angular/common';
     RouterOutlet,
     RouterLinkActive,
     HeaderComponent,
+    FirstSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

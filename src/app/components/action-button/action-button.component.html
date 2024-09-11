@@ -1,0 +1,10 @@
+<button
+  [ngClass]="{
+    primary: type == buttonTypeEnum.PRIMARY,
+    secondary: type == buttonTypeEnum.SECONDARY,
+    'icon-right': iconRight
+  }"
+>
+  <i-feather name="{{ icon }}" />
+  <span>{{ text }}</span>
+</button>

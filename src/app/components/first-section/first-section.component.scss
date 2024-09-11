@@ -1,0 +1,40 @@
+@use "../../utilities/variables" as *;
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+
+  .left-content {
+    display: inline-block;
+    color: $textPrimary;
+    h1 {
+      font-size: 3rem;
+      background: $gradient;
+      background-clip: text;
+      color: transparent;
+      display: inline;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-block: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
+  img {
+    max-width: 450px;
+  }
+}
