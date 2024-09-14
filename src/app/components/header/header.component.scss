@@ -1,26 +1,32 @@
 @use "../../utilities/variables" as *;
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block: 20px;
+  max-width: 100%;
   box-shadow: 0px 15px 20px -7px #00000055;
 
-  .logo {
-    max-width: 180px;
-  }
-
-  ul {
+  .content {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+    max-width: 1600px;
+    margin-inline: auto;
 
-    .nav-link {
-      color: $textSecondary;
-      transition: 0.3s;
+    .logo {
+      max-width: 180px;
+    }
 
-      &:hover {
-        color: $textPrimary;
+    ul {
+      display: flex;
+      gap: 30px;
+
+      .nav-link {
+        color: $textSecondary;
+        transition: 0.3s;
+
+        &:hover {
+          color: $textPrimary;
+        }
       }
     }
   }

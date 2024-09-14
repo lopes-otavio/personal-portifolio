@@ -1,0 +1,38 @@
+@use "../../../utilities/variables" as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $backgroundSecondary;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+
+  .right-content {
+    color: $textPrimary;
+    ul {
+      display: flex;
+      gap: 24px;
+    }
+    h3 {
+      color: $highlightColor;
+      margin-top: 40px;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    p {
+      color: $textSecondary;
+      margin-block: 20px;
+    }
+
+    ::ng-deep {
+      button {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

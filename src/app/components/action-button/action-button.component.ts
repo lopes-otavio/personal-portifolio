@@ -3,8 +3,8 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FeatherModule } from 'angular-feather';
 import { ButtonComponent } from '../../interfaces/button';
-import { ButtonType, ButtonIcon } from '../types';
-import { ButtonTypeEnum, ButtonIconPostion } from '../../enums/button.enum';
+import { ButtonType, ButtonIcon } from '../../types';
+import { ButtonTypeEnum } from '../../enums/button.enum';
 
 @Component({
   selector: 'app-action-button',

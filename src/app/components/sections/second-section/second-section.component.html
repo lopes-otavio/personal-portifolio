@@ -1,0 +1,32 @@
+<section id="about-me" class="container">
+  <img src="assets/second.png" />
+
+  <div class="right-content">
+    <ul>
+      <li *ngFor="let item of techIcons">
+        <img class="icon" src="{{ item.src }}" />
+      </li>
+    </ul>
+
+    <h3 class="kalam">About me</h3>
+    <h4>
+      I’m a passionate software developer looking for <br />
+      my first international oppotunity
+    </h4>
+    <p>
+      Beyond coding, I'm a coffee enthusiast, a cat lover, and a self-taught
+      artist who <br />
+      enjoys spending my free time doodling. I am currently seeking
+      opportunities to <br />
+      bring my skills and enthusiasm to a tech company in the United States or
+      Europe <br />
+      and am excited about the prospect of relocating to pursue new challenges.
+    </p>
+
+    <app-action-button
+      [button-type]="'primary'"
+      [button-icon]="'file-text'"
+      [button-text]="'My resume'"
+    />
+  </div>
+</section>

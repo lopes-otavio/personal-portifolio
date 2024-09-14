@@ -1,4 +1,4 @@
-import { ButtonIcon, ButtonType } from '../components/types';
+import { ButtonIcon, ButtonType } from '../types';
 
 export interface ButtonComponent {
   type: ButtonType;
